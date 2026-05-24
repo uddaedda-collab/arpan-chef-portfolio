@@ -1,10 +1,11 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { BASE_PATH } from '../config'
 
 const experiences = [
   {
     title: 'Bakery & Artisan Experience',
-    image: '/images/chef-dough-2.jpeg',
+    image: 'images/chef-dough-2.jpeg',
     description: [
       'Built strong practical expertise in artisan dough preparation, bakery handling, kitchen discipline, and precision food preparation techniques within a professional fast-paced kitchen environment.',
       'Developed consistency, workflow management, and quality-focused preparation methods while maintaining hygiene and presentation standards.',
@@ -13,7 +14,7 @@ const experiences = [
   },
   {
     title: 'Multi Cuisine Kitchen Experience',
-    image: '/images/chef-wok.jpeg',
+    image: 'images/chef-wok.jpeg',
     description: [
       'Worked across multiple live kitchen sections involving Continental, Chinese, Indian, and fast-food preparation while maintaining speed, flavor balance, consistency, and plating quality.',
       'Adapted efficiently inside dynamic kitchen environments requiring teamwork, coordination, time management, and professional execution.',
@@ -66,7 +67,7 @@ const Experience = () => {
                 <div className="absolute inset-0 bg-chef-gold/10 rounded-2xl blur-[40px] -z-10" />
                 <div className="rounded-2xl overflow-hidden glow-border">
                   <img
-                    src={exp.image}
+                    src={`${BASE_PATH}${exp.image}`}
                     alt={exp.title}
                     className="w-full aspect-[3/4] object-cover object-center img-cinematic"
                     loading="lazy"

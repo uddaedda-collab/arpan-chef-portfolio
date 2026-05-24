@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { BASE_PATH } from '../config'
 
 const MultiCuisine = () => {
   return (
@@ -19,7 +20,7 @@ const MultiCuisine = () => {
           
           <div className="relative rounded-2xl overflow-hidden glow-border">
             <img
-              src="/images/chef-wok.jpeg"
+              src={`${BASE_PATH}images/chef-wok.jpeg`}
               alt="Chef Arpan cooking vegetable dish in wok"
               className="w-full aspect-[2/3] object-cover object-center img-cinematic"
               loading="lazy"

@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { BASE_PATH } from '../config'
 
 const keywords = ['Live Kitchen', 'High Flame Cooking', 'Multi Cuisine', 'Fast Service', 'Premium Taste']
 
@@ -41,9 +42,9 @@ const LiveCooking = () => {
           
           <div className="relative glow-border rounded-2xl overflow-hidden">
             <img
-              src="/images/chef-noodles.jpeg"
+              src={`${BASE_PATH}images/chef-noodles.jpeg`}
               alt="Chef Arpan cooking noodles in wok with high flame"
-              className="w-full max-h-[700px] object-contain img-cinematic"
+              className="w-full aspect-[2/3] object-cover object-top img-cinematic"
               loading="lazy"
             />
             

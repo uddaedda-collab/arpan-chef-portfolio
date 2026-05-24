@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { BASE_PATH } from '../config'
 
 const keywords = ['Fresh Dough', 'Artisan Baking', 'Perfect Texture', 'Precision Craftsmanship']
 
@@ -70,7 +71,7 @@ const BakerySection = () => {
           
           <div className="relative rounded-2xl overflow-hidden glow-border">
             <img
-              src="/images/chef-dough.jpeg"
+              src={`${BASE_PATH}images/chef-dough.jpeg`}
               alt="Chef Arpan preparing artisan dough"
               className="w-full aspect-[3/4] object-cover object-center img-cinematic"
               loading="lazy"

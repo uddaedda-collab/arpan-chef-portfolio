@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { BASE_PATH } from '../config'
 
 const BreadGlazing = () => {
   return (
@@ -19,7 +20,7 @@ const BreadGlazing = () => {
           
           <div className="relative rounded-2xl overflow-hidden glow-border">
             <img
-              src="/images/chef-glazing.jpeg"
+              src={`${BASE_PATH}images/chef-glazing.jpeg`}
               alt="Chef Arpan glazing bread buns"
               className="w-full aspect-[3/4] object-cover object-center img-cinematic"
               loading="lazy"

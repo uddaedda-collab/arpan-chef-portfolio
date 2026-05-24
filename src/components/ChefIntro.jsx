@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { BASE_PATH } from '../config'
 
 const floatingWords = ['Precision', 'Passion', 'Creativity', 'Flavor', 'Excellence']
 
@@ -22,7 +23,7 @@ const ChefIntro = () => {
           
           <div className="relative rounded-2xl overflow-hidden glow-border">
             <img
-              src="/images/chef-portrait.jpeg"
+              src={`${BASE_PATH}images/chef-portrait.jpeg`}
               alt="Chef Arpan in professional kitchen"
               className="w-full aspect-[2/3] object-cover object-center img-cinematic"
               loading="lazy"
